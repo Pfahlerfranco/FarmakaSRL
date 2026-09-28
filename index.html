@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es-AR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/webp" href="/brand/farmaka-logo.webp" />
+
+    <title>Farmaka SRL — Droguería | Distribución y cadena de frío</title>
+    <meta
+      name="description"
+      content="Farmaka SRL es una droguería habilitada que abastece a farmacias, clínicas y centros de salud con trazabilidad completa y cadena de frío monitoreada."
+    />
+    <meta name="theme-color" content="#2E9E44" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Farmaka SRL" />
+    <meta property="og:locale" content="es_AR" />
+    <meta property="og:title" content="Farmaka SRL — Droguería" />
+    <meta
+      property="og:description"
+      content="Distribución mayorista, cadena de frío y trazabilidad ANMAT para farmacias, clínicas y centros de salud."
+    />
+    <meta property="og:image" content="/brand/farmaka-logo.webp" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    />
+  </head>
+  <body>
+    <script>
+      ;(function () {
+        var theme = 'light'
+        try {
+          if (localStorage.getItem('farmaka-theme') === 'dark') theme = 'dark'
+        } catch (e) {
+        }
+        document.documentElement.dataset.theme = theme
+      })()
+    </script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

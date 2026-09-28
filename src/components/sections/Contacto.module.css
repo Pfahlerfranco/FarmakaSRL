@@ -1,0 +1,237 @@
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  gap: 56px;
+}
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+.title {
+  font-size: 32px;
+  max-width: 20ch;
+}
+
+@media (max-width: 560px) {
+  .title {
+    font-size: 26px;
+  }
+}
+
+/* ---------- Formulario ---------- */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 36px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+/* Email y teléfono conviven en una fila; se apilan en pantallas angostas. */
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+@media (max-width: 560px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Honeypot: fuera de pantalla, nunca display:none (los bots ignoran los ocultos). */
+.honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.label {
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-family: var(--font-mono);
+}
+
+.optional {
+  text-transform: none;
+  letter-spacing: 0;
+  opacity: 0.75;
+}
+
+.input,
+.textarea {
+  border: 1px solid var(--line);
+  background: var(--paper-raised);
+  padding: 12px 14px;
+  font-family: var(--font-body);
+  font-size: 14.5px;
+  color: var(--ink);
+  width: 100%;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  color: var(--muted);
+  opacity: 0.75;
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 96px;
+}
+
+.inputError {
+  border-color: var(--danger);
+}
+
+.error {
+  font-size: 12px;
+  color: var(--danger);
+}
+
+.check {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.check input {
+  margin-top: 3px;
+  accent-color: var(--green);
+}
+
+.feedback {
+  font-size: 13.5px;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  background: var(--paper-raised);
+}
+
+.feedbackOk {
+  border-color: var(--green);
+  color: var(--green-deep);
+}
+
+.feedbackError {
+  border-color: var(--danger);
+  color: var(--danger);
+}
+
+/* ---------- Ficha de datos ---------- */
+
+.aside {
+  margin-top: 36px;
+}
+
+.infoCard {
+  position: relative;
+  background: var(--paper-raised);
+  border: 1px solid var(--line);
+  margin: 0;
+}
+
+/* Marcas de esquina, motivo de "hoja de especificaciones" del mockup */
+.infoCard::before,
+.infoCard::after {
+  content: '';
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border-color: var(--green);
+  border-style: solid;
+  opacity: 0.8;
+}
+
+.infoCard::before {
+  top: -1px;
+  left: -1px;
+  border-width: 1.5px 0 0 1.5px;
+}
+
+.infoCard::after {
+  bottom: -1px;
+  right: -1px;
+  border-width: 0 1.5px 1.5px 0;
+}
+
+.infoRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--line);
+  font-size: 13.5px;
+}
+
+.infoRow:last-child {
+  border-bottom: none;
+}
+
+.infoRow dt {
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  flex: 0 0 auto;
+}
+
+.infoRow dd {
+  margin: 0;
+  text-align: right;
+  font-weight: 500;
+}
+
+.infoRow dd a {
+  text-decoration: none;
+}
+
+.infoRow dd a:hover {
+  color: var(--green-deep);
+  text-decoration: underline;
+}
+
+.phones {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.map {
+  margin-top: -1px;
+  border: 1px solid var(--line);
+  height: 240px;
+  background: var(--paper-raised);
+  display: block;
+  width: 100%;
+}
+
+.whatsBlock {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.whatsNote {
+  font-size: 12.5px;
+  color: var(--muted);
+}

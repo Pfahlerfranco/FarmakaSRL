@@ -1,0 +1,44 @@
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.mark {
+  flex: 0 0 auto;
+}
+
+.word {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.name {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 21px;
+  letter-spacing: 0.01em;
+  color: var(--green);
+  display: flex;
+}
+
+.name b {
+  color: var(--ink);
+  font-weight: inherit;
+}
+
+.sub {
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-top: 3px;
+}
+
+/* Variante para el footer: sólo la palabra, más chica */
+.compact .name {
+  font-size: 17px;
+}

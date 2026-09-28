@@ -1,0 +1,46 @@
+:root {
+  /* Marca */
+  --ink: #12211a;
+  --paper: #f6f5ef;
+  --paper-raised: #ffffff;
+  --green: #2e9e44;
+  --green-deep: #1d6e30;
+  --green-tint: #e4f0e4;
+  --line: #dbddd2;
+  --muted: #5c6b60;
+  --canvas: #e7e6dd;
+  --canvas-line: #d2d1c6;
+  --danger: #b23b2e;
+  --focus: #0e5c32;
+
+  /* Tipografía */
+  --font-display: 'Syne', 'IBM Plex Sans', system-ui, sans-serif;
+  --font-body: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', monospace;
+
+  /* Layout */
+  --shell-max: 1240px;
+  --gutter: 40px;
+  --gutter-sm: 22px;
+  --header-h: 74px;
+  --section-y: 88px;
+  --section-y-sm: 56px;
+
+  color-scheme: light;
+}
+
+:root[data-theme='dark'] {
+  --ink: #ecf1ec;
+  --paper: #101511;
+  --paper-raised: #161c17;
+  --green: #39b36e;
+  --green-deep: #8fe3ae;
+  --green-tint: #152119;
+  --line: #293029;
+  --muted: #93a197;
+  --canvas: #0a0d0a;
+  --canvas-line: #1b1f1b;
+  --focus: #39b36e;
+
+  color-scheme: dark;
+}

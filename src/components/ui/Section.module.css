@@ -1,0 +1,25 @@
+.section {
+  padding: var(--section-y) var(--gutter);
+  border-bottom: 1px solid var(--line);
+  background: var(--paper);
+}
+
+.section:last-of-type {
+  border-bottom: none;
+}
+
+.inner {
+  max-width: var(--shell-max);
+  margin-inline: auto;
+}
+
+/* Fondo alterno para dar ritmo entre secciones */
+.raised {
+  background: var(--paper-raised);
+}
+
+@media (max-width: 720px) {
+  .section {
+    padding: var(--section-y-sm) var(--gutter-sm);
+  }
+}
