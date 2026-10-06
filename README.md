@@ -74,14 +74,14 @@ tocar ningún componente.
 El envío va por **Formspree**. El ciclo es:
 
 ```
-Visitante completa el form  →  POST a Formspree  →  mail a admin@farmaka.com.ar
+Visitante completa el form  →  POST a Formspree  →  mail a administracion@farmaka.com.ar
                                     (+ historial en el panel de Formspree)
 ```
 
 ### Alta (una sola vez)
 
 1. Crear cuenta en <https://formspree.io> y un formulario nuevo.
-2. Poner como destino **admin@farmaka.com.ar**.
+2. Poner como destino **administracion@farmaka.com.ar**.
 3. Formspree manda un mail de verificación a esa casilla: **hay que confirmarlo**,
    si no las consultas no se reenvían.
 4. Copiar el endpoint (`https://formspree.io/f/<ID>`) y cargarlo en `VITE_CONTACT_ENDPOINT`:

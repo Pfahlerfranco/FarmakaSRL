@@ -18,10 +18,22 @@ export const serviciosPage = {
     'Cada servicio está pensado para que la farmacia reciba lo que pidió, cuando lo pidió y en las condiciones en que el producto debe viajar. Abajo, el detalle de qué incluye cada uno.',
   detalle: [
     {
+      id: 'atencion-paciente',
+      title: 'Atención al paciente y afiliado',
+      description:
+        'Acompañamos al paciente o afiliado durante todo el circuito, con seguimiento constante para que la medicación llegue en tiempo y forma.',
+      bullets: [
+        'Atención directa al paciente o afiliado durante todo el circuito',
+        'Seguimiento del pedido hasta la entrega de la medicación',
+        'Comunicación constante ante cualquier demora o faltante',
+        'Coordinación con la institución, el profesional y el paciente',
+      ],
+    },
+    {
       id: 'distribucion',
       title: 'Distribución mayorista',
       description:
-        'Entregamos a farmacias, clínicas y centros de salud con rutas y frecuencias acordadas de antemano, para que la reposición deje de ser una urgencia y pase a ser rutina.',
+        'Entregamos a obras sociales, prepagas, clínicas y farmacias con rutas y frecuencias acordadas de antemano, para que la reposición deje de ser una urgencia y pase a ser rutina.',
       bullets: [
         'Entregas programadas por zona, con día y franja acordados',
         'Cobertura en CABA y Gran Buenos Aires, y envíos al interior por transporte habilitado',
@@ -38,7 +50,6 @@ export const serviciosPage = {
         'Cámaras con monitoreo permanente y alarmas ante desvíos',
         'Conservadoras y acumuladores acondicionados para cada tipo de envío',
         'Registro de temperatura disponible para el cliente',
-        'Procedimiento de contingencia documentado ante cortes o desvíos',
       ],
     },
     {
@@ -49,8 +60,6 @@ export const serviciosPage = {
       bullets: [
         'Informe de movimientos por GTIN, lote y número de serie',
         'Confirmación de las transacciones que corresponden a cada entrega',
-        'Respaldo documental disponible ante auditorías o inspecciones',
-        'Gestión de retiros de mercado sobre los lotes involucrados',
       ],
     },
     {
@@ -62,7 +71,6 @@ export const serviciosPage = {
         'Pedidos por WhatsApp, email o teléfono',
         'Confirmación de stock y precio antes de cerrar el pedido',
         'Seguimiento del estado hasta la entrega',
-        'Historial de compras a disposición de la farmacia',
       ],
     },
     {
@@ -79,13 +87,13 @@ export const serviciosPage = {
     },
     {
       id: 'atencion',
-      title: 'Atención a farmacias',
+      title: 'Atención a obras sociales',
       description:
-        'Una persona que conoce la farmacia, su consumo y sus tiempos. No un call center distinto cada vez.',
+        'Comunicación cercana con la institución y sus referentes, coordinando cada tratamiento entre los profesionales, la droguería y el afiliado.',
       bullets: [
-        'Ejecutivo de cuenta asignado',
-        'Reposición programada en función del consumo real',
-        'Asesoramiento ante faltantes y alternativas disponibles',
+        'Ejecutivo de cuenta asignado para cada institución',
+        'Coordinación con profesionales y referentes de la institución',
+        'Orientación y resolución de consultas e incidencias vinculadas con la provisión',
         'Gestión de devoluciones y notas de crédito',
       ],
     },
@@ -136,32 +144,32 @@ export const serviciosPage = {
 
 export const nosotrosPage = {
   eyebrow: 'Nosotros',
-  title: 'Una droguería que conoce cada eslabón del camino.',
+  title: 'Una droguería que pone al afiliado en el centro de cada tratamiento.',
   intro:
-    'Farmaka nació para resolver un problema concreto: que la farmacia independiente pueda abastecerse con la misma previsibilidad que una cadena grande, sin perder trato directo.',
+    'Farmaka trabaja con obras sociales y financiadores de salud para que cada afiliado reciba su tratamiento en tiempo, forma y con el acompañamiento que necesita, desde medicación de alta complejidad hasta el seguimiento diario del circuito.',
   historia: [
-    'Somos un equipo de farmacéuticos, logística y comercio exterior dedicado a que el medicamento correcto llegue en tiempo, forma y temperatura. Trabajamos con protocolos de Buenas Prácticas de Distribución y auditorías internas mes a mes.',
-    'Acompañamos a farmacias independientes y cadenas regionales con stock permanente, reposición programada y un canal directo de atención para pedidos urgentes.',
-    'Con los años aprendimos que la mayoría de los problemas de abastecimiento no son de stock sino de información: un pedido que nadie confirmó, una entrega sin aviso, un faltante que se comunica tarde. Por eso el foco no está sólo en el depósito, sino en que la farmacia sepa en todo momento qué va a recibir y cuándo.',
+    'Somos un equipo de farmacéuticos, logística y comercio exterior con experiencia en la provisión y gestión de medicamentos de alta complejidad: tratamientos oncológicos, HIV, diabetes y otras patologías de alto costo, según las necesidades de cada institución.',
+    'Entendemos que detrás de cada tratamiento hay una persona que necesita una respuesta clara, oportuna y humana. Por eso nuestra propuesta prioriza la atención y el acompañamiento del afiliado, facilitando la coordinación entre la institución, los profesionales, la droguería y el paciente.',
+    'Nuestro objetivo es construir una relación de trabajo de largo plazo con cada institución, aportando una gestión profesional y cercana que contribuya a mejorar la experiencia del afiliado y la continuidad de sus tratamientos.',
   ],
   valores: [
     {
       index: '01',
       title: 'Seguridad',
       description:
-        'Cada lote se controla al ingresar y al salir del depósito. Lo que no pasa el control no se despacha, aunque implique demorar una entrega.',
+        'Cada lote se controla al ingresar y al salir del depósito. Lo que no pasa el control no se despacha, aunque implique demorar una entrega — más aún en tratamientos de alta complejidad.',
     },
     {
       index: '02',
       title: 'Puntualidad',
       description:
-        'Las ventanas de entrega se cumplen. Y cuando algo se demora, el aviso llega antes que el reclamo: la farmacia necesita poder planificar.',
+        'Las ventanas de entrega se cumplen. Y cuando algo se demora, el aviso llega antes que el reclamo: la institución y el afiliado necesitan poder planificar el tratamiento.',
     },
     {
       index: '03',
-      title: 'Transparencia',
+      title: 'Respuesta',
       description:
-        'El cliente ve el estado de su pedido de punta a punta, incluyendo lo que no está disponible. Preferimos informar un faltante a mandar un reemplazo que nadie pidió.',
+        'Cada consulta o incidencia la resuelve la misma persona que conoce el pedido, no un call center distinto cada vez. Preferimos avisar un faltante a mandar un reemplazo que nadie pidió.',
     },
   ] satisfies ProcessStep[],
   cumplimiento: {

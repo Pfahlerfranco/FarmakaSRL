@@ -68,6 +68,15 @@ export function IconUser(props: SVGProps<SVGSVGElement>) {
   )
 }
 
+export function IconHeartPulse(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg {...base} {...props}>
+      <path d="M12 20.5 4.6 13.1a5 5 0 0 1 7.1-7.1l.3.3.3-.3a5 5 0 0 1 7.1 7.1L12 20.5Z" />
+      <path d="M7 12.5h2.3l1.2-2.4 1.6 4.8 1.2-2.4H17" />
+    </svg>
+  )
+}
+
 export function IconWhatsApp(props: SVGProps<SVGSVGElement>) {
   return (
     <svg

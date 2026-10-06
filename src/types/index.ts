@@ -22,6 +22,8 @@ export interface Service {
   title: string
   description: string
   Icon: IconComponent
+  /** false = no se muestra en la grilla de la home, pero sigue disponible para /servicios. */
+  showOnHome?: boolean
 }
 
 export interface Value {

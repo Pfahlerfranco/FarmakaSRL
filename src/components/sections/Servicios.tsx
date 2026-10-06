@@ -15,7 +15,9 @@ export function Servicios() {
       </h2>
 
       <ul className={styles.grid}>
-        {services.map(({ id, title, description, Icon }) => (
+        {services
+          .filter((service) => service.showOnHome !== false)
+          .map(({ id, title, description, Icon }) => (
           <li key={id} className={styles.card}>
             <Icon className={styles.icon} />
             <h3 className={styles.cardTitle}>{title}</h3>

@@ -2,6 +2,7 @@ import {
   IconBarcode,
   IconBox,
   IconClipboard,
+  IconHeartPulse,
   IconSnowflake,
   IconUser,
   IconWarehouse,
@@ -29,9 +30,9 @@ export const navItems: NavItem[] = [
 
 export const hero = {
   eyebrow: 'Droguería habilitada · Disp. ANMAT',
-  //   mantiene "lote por lote" en una sola línea al hacer wrap.
-  title: 'El eslabón que sostiene la cadena de frío, lote por lote.',
-  lead: 'Farmaka abastece a farmacias, clínicas y centros de salud con trazabilidad completa: desde el depósito habilitado hasta el mostrador.',
+  //   mantiene "afiliado por afiliado" en una sola línea al hacer wrap.
+  title: 'El eslabón que sostiene cada tratamiento oncológico y de alta complejidad, afiliado por afiliado.',
+  lead: 'Distribución mayorista: entrega a obras sociales, prepagas, clínicas y farmacias en todo el país, con trazabilidad completa desde el depósito habilitado hasta el mostrador.',
   primaryCta: { label: 'Ver servicios', href: '#servicios' },
   secondaryCta: { label: 'Hablar con ventas', href: '#contacto' },
 } as const
@@ -40,14 +41,21 @@ export const stats: Stat[] = [
   { value: '+12', label: 'años operando' },
   { value: '100%', label: 'pedidos trazados' },
   { value: '24/7', label: 'cadena de frío monitoreada' },
-  { value: '+180', label: 'farmacias abastecidas' },
+  { value: '+500', label: 'clientes atendidos' },
 ]
 
 export const services: Service[] = [
   {
+    id: 'atencion-paciente',
+    title: 'Atención al paciente y afiliado',
+    description:
+      'Seguimiento de pedidos y atención constante para que la medicación se reciba en tiempo y forma.',
+    Icon: IconHeartPulse,
+  },
+  {
     id: 'distribucion',
     title: 'Distribución mayorista',
-    description: 'Entrega a farmacias, clínicas y centros de salud en todo el país.',
+    description: 'Entrega a obras sociales, prepagas, clínicas y farmacias en todo el país.',
     Icon: IconBox,
   },
   {
@@ -68,6 +76,7 @@ export const services: Service[] = [
     title: 'Gestión de pedidos',
     description: 'Plataforma de pedidos con confirmación y seguimiento en tiempo real.',
     Icon: IconClipboard,
+    showOnHome: false,
   },
   {
     id: 'deposito',
@@ -77,18 +86,18 @@ export const services: Service[] = [
   },
   {
     id: 'atencion',
-    title: 'Atención a farmacias',
-    description: 'Asesoramiento comercial dedicado y reposición programada.',
+    title: 'Atención a obras sociales',
+    description: 'Comunicación cercana y coordinación con la institución y sus referentes.',
     Icon: IconUser,
   },
 ]
 
 export const about = {
   eyebrow: 'Quiénes somos',
-  title: 'Una droguería que conoce cada eslabón del camino.',
+  title: 'Una droguería que pone al afiliado en el centro de cada tratamiento.',
   paragraphs: [
-    'Somos un equipo de farmacéuticos, logística y comercio exterior dedicado a que el medicamento correcto llegue en tiempo, forma y temperatura. Trabajamos con protocolos de Buenas Prácticas de Distribución y auditorías internas mes a mes.',
-    'Acompañamos a farmacias independientes y cadenas regionales con stock permanente, reposición programada y un canal directo de atención para pedidos urgentes.',
+    'Trabajamos con obras sociales y financiadores de salud en la provisión y gestión de medicamentos de alta complejidad —oncológicos, HIV, diabetes y otras terapias especiales— con una propuesta orientada a dar respuesta, seguimiento y acompañamiento durante todo el circuito de atención.',
+    'Entendemos que detrás de cada tratamiento hay una persona que necesita una respuesta clara, oportuna y humana. Por eso priorizamos la atención del afiliado, facilitando la coordinación entre la institución, los profesionales y el paciente.',
   ],
   badges: [
     'Disposición ANMAT vigente',
@@ -101,17 +110,20 @@ export const values: Value[] = [
   {
     index: '01',
     title: 'Seguridad',
-    description: 'Cada lote se controla al ingresar y al salir del depósito.',
+    description:
+      'Cada lote se controla al ingresar y al salir del depósito, también en los tratamientos de alta complejidad.',
   },
   {
     index: '02',
     title: 'Puntualidad',
-    description: 'Ventanas de entrega cumplidas, con aviso ante cualquier demora.',
+    description:
+      'Ventanas de entrega cumplidas, con aviso ante cualquier demora, para que la institución y el afiliado puedan planificar.',
   },
   {
     index: '03',
-    title: 'Transparencia',
-    description: 'El cliente ve el estado de su pedido de punta a punta.',
+    title: 'Respuesta',
+    description:
+      'Un mismo interlocutor resuelve consultas e incidencias, sin pasar por un call center distinto cada vez.',
   },
 ]
 
@@ -120,7 +132,7 @@ export const contact: ContactInfo = {
   address: 'Mataderos, CABA',
   mapQuery: 'Mataderos, Ciudad Autónoma de Buenos Aires, Argentina',
   phones: ['(011) 4687-3488', '(011) 4687-7583'],
-  email: 'admin@farmaka.com.ar',
+  email: 'administracion@farmaka.com.ar',
   // TODO: reemplazar por el número real de WhatsApp de la empresa.
   whatsapp: '5491146873488',
   hours: 'Lunes a viernes de 8:30 a 16:30 h',
