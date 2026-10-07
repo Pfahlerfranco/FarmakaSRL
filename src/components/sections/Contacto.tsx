@@ -6,7 +6,7 @@ import { contact, contactSection, whatsappUrl } from '@/data/site'
 import buttons from '@/styles/buttons.module.css'
 import styles from './Contacto.module.css'
 
-/** Convierte "(011) 4687-3488" en un href tel: usable. */
+/** Convierte "(011) 6204-5806" en un href tel: usable. */
 function telHref(phone: string): string {
   return `tel:+54${phone.replace(/\D/g, '').replace(/^0/, '')}`
 }

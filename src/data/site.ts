@@ -131,10 +131,9 @@ export const contact: ContactInfo = {
   // A pedido del cliente se publica sólo el barrio, no la dirección exacta del depósito.
   address: 'Mataderos, CABA',
   mapQuery: 'Mataderos, Ciudad Autónoma de Buenos Aires, Argentina',
-  phones: ['(011) 4687-3488', '(011) 4687-7583'],
+  phones: ['(011) 6204-5806', '(011) 6204-5804'],
   email: 'administracion@farmaka.com.ar',
-  // TODO: reemplazar por el número real de WhatsApp de la empresa.
-  whatsapp: '5491146873488',
+  whatsapp: '5491162045806',
   hours: 'Lunes a viernes de 8:30 a 16:30 h',
 }
 

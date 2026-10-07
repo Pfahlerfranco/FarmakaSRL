@@ -56,7 +56,7 @@ export function ContactForm() {
     <form className={styles.form} onSubmit={handleSubmit} noValidate>
       <div className={styles.field}>
         <label className={styles.label} htmlFor={fieldId('nombre')}>
-          Nombre y farmacia
+          Nombre y apellido o razón social
         </label>
         <input
           className={`${styles.input} ${errors.nombre ? styles.inputError : ''}`}
